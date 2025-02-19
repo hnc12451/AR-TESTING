@@ -10,13 +10,13 @@
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <body style="margin : 0px; overflow: hidden;">
       <a-scene embedded arjs>
-        <a-marker type="barcode" preset="30">
+        <a-marker preset="hiro">
           
         
           <a-entity
             position="0 0 0"
             scale= "10%"
-            gltf-model="result.gltf"
+            gltf-model="../result.gltf"
           ></a-entity>
         </a-marker>
         <a-entity camera></a-entity>
