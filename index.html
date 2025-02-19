@@ -8,19 +8,23 @@
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <!-- we import arjs version without NFT but with marker + location based support -->
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    </head>
     <body style="margin : 0px; overflow: hidden;">
-      <a-scene embedded arjs>
-        <a-marker preset="hiro">
-          
+      <a-scene embedded arjs sourceType: webcam; sourceWidth: 1280; sourceHeight: 960; displayWidth: 1280; displayHeight: 960;>
+        <a-marker type="barcode" preset="30">
+         
+         
         
           <a-entity
             position="0 0 0"
-            scale= "10%"
+            scale="3 3 3"        
+            rotation="0 0 0"
             gltf-model="../result.gltf"
           ></a-entity>
+
         </a-marker>
         <a-entity camera></a-entity>
       </a-scene>
-      <img src="30.png" size="">
+     
     </body>
   </html>
